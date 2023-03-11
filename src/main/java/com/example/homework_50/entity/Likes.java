@@ -3,10 +3,11 @@ package com.example.homework_50.entity;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.List;
+import java.util.Map;
+
 @Data
 public class Likes {
-   private  User likedUsers;
-   private List<Post> likedPost;
+   private Publication likedPost;
    private LocalDate dateOfLike;
+   private User likedUser;
 }
